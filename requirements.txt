@@ -1,3 +1,5 @@
 black
 ruff
 httpx
+pg8000
+asyncpg

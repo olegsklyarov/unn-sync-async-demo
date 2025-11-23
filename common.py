@@ -64,3 +64,31 @@ urls = [
     "https://jsonplaceholder.typicode.com/photos/1",
     "https://jsonplaceholder.typicode.com/photos/2",
 ]
+
+# Список из 15 SQL запросов для выполнения
+queries = [
+    "SELECT 1",
+    "SELECT 2",
+    "SELECT 3",
+    "SELECT 4",
+    "SELECT 5",
+    "SELECT version()",
+    "SELECT current_timestamp",
+    "SELECT current_database()",
+    "SELECT pg_backend_pid()",
+    "SELECT 10",
+    "SELECT 11",
+    "SELECT 12",
+    "SELECT 13",
+    "SELECT 14",
+    "SELECT 15",
+]
+
+# Параметры подключения к PostgreSQL
+DB_CONFIG = {
+    "host": "localhost",
+    "port": 5432,
+    "database": "postgres",
+    "user": "postgres",
+    "password": "postgres",
+}

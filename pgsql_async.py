@@ -14,7 +14,7 @@ async def execute_query(pool: asyncpg.Pool, query: str) -> list:
 
 @measure_time
 async def main():
-    pool = await asyncpg.create_pool(**DB_CONFIG, min_size=1, max_size=15)
+    pool = await asyncpg.create_pool(**DB_CONFIG, min_size=1, max_size=25)
     try:
         tasks = [execute_query(pool, query) for query in queries]
         await asyncio.gather(*tasks)

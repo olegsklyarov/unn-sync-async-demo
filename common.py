@@ -65,23 +65,35 @@ urls = [
     "https://jsonplaceholder.typicode.com/photos/2",
 ]
 
-# Список из 15 SQL запросов для выполнения
+# Список из 25 SQL запросов для выполнения
+# Используется pg_sleep() для создания задержки, чтобы продемонстрировать
+# разницу в производительности между синхронной и асинхронной версиями
 queries = [
-    "SELECT 1",
-    "SELECT 2",
-    "SELECT 3",
-    "SELECT 4",
-    "SELECT 5",
-    "SELECT version()",
-    "SELECT current_timestamp",
-    "SELECT current_database()",
-    "SELECT pg_backend_pid()",
-    "SELECT 10",
-    "SELECT 11",
-    "SELECT 12",
-    "SELECT 13",
-    "SELECT 14",
-    "SELECT 15",
+    "SELECT pg_sleep(0.5), 1",
+    "SELECT pg_sleep(0.5), 2",
+    "SELECT pg_sleep(0.5), 3",
+    "SELECT pg_sleep(0.5), 4",
+    "SELECT pg_sleep(0.5), 5",
+    "SELECT pg_sleep(0.5), version()",
+    "SELECT pg_sleep(0.5), current_timestamp",
+    "SELECT pg_sleep(0.5), current_database()",
+    "SELECT pg_sleep(0.5), pg_backend_pid()",
+    "SELECT pg_sleep(0.5), 10",
+    "SELECT pg_sleep(0.5), 11",
+    "SELECT pg_sleep(0.5), 12",
+    "SELECT pg_sleep(0.5), 13",
+    "SELECT pg_sleep(0.5), 14",
+    "SELECT pg_sleep(0.5), 15",
+    "SELECT pg_sleep(0.5), 16",
+    "SELECT pg_sleep(0.5), 17",
+    "SELECT pg_sleep(0.5), 18",
+    "SELECT pg_sleep(0.5), 19",
+    "SELECT pg_sleep(0.5), 20",
+    "SELECT pg_sleep(0.5), 21",
+    "SELECT pg_sleep(0.5), 22",
+    "SELECT pg_sleep(0.5), 23",
+    "SELECT pg_sleep(0.5), 24",
+    "SELECT pg_sleep(0.5), 25",
 ]
 
 # Параметры подключения к PostgreSQL

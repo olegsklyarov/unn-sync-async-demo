@@ -1,5 +1,5 @@
 black
 ruff
-httpx
+aiohttp
 pg8000
 asyncpg
